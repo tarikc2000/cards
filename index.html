@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="hr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Cards</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="/js/main.js" async></script>
+    <script>
+      function startGame() {
+        let overlayIntro = document.getElementById("intro-game");
+        overlayIntro.classList.remove("visible-game");
+      }
+    </script>
+  </head>
+  <body>
+    <h1 class="page-title">Cards</h1>
+    <div class="overlay-text">
+      Click to Start
+    </div>
+    <div id="game-win-text" class="overlay-text">
+      <div class="overlay-text-content">
+        <span href="#" id="win-text">WINNER !</span>
+        <a href="#" class="overlay-text-small" id="reload-game">Glavni meni</a>
+      </div>
+    </div>
+    <div id="game-over-text" class="overlay-text">
+      GAME OVER
+      <span class="overlay-text-small">Start new game</span>
+    </div>
+
+    <div class="overlay-text" id="info">
+      <div class="overlay-text-content">
+        <h2 id="naslov-info">Title</h2>
+        <p style="font-size: 18px; padding-left: 100px; padding-right: 100px;" id="detail-info"></p>
+        <a href="#" id="povratak-option-menu">Povratak</a>
+      </div>
+    </div>
+
+    <div id="projekt-info" class="overlay-text">
+      <div class="overlay-text-content">
+        <a href="#" id="info-link">Informacije o projektu</a>
+        <a href="#" id="predmet">Predmet</a>
+        <a href="#" id="studij">Studij</a>
+        <a href="#" id="fakultet">Fakultet</a>
+        <a href="#" id="naziv">Naziv projekta</a>
+        <a href="#" id="autor">Podaci o autoru</a>
+        <a href="#" id="povratak-game-menu">Povratak</a>
+      </div>
+    </div>
+
+    <div id="intro-game" class="overlay-text  visible-game">
+      <div class="overlay-text-content">
+        <a href="#" id="start-game" onclick="startGame();">Nova igra</a>
+        <a href="#" id="upute">Upute</a>
+        <a href="#" id="information">Informacije</a>
+      </div>
+    </div>
+
+    <div id="upute-game" class="overlay-text">
+      <div class="overlay-text-content" style="padding: 150px;">
+        <h2 id="naslov-info">Uputstvo za igricu</h2>
+        <p style="font-size: 18px;" id="detail-upute">
+          Igrica se sastoji od ploče ​5x5 na kojoj se nalazi 25 kartica. 
+          Igraju dva igrača naizmjenično. Igrač koji je na potezu bira jednu karticu.
+          Ispod svake kartice nalazi se neki broj od 1 do 10, koji je dodijeljen slučajnim odabirom. 
+          Igrači biraju kartice sve dok neko ne dostigne 50 bodova. Nakon otvaranja neke od kartica igraču 
+          koji je na potezu dodaje se na zbir osvojenih bodova broj koji se nalazio iza otvorene kartice. 
+          Nakon toga zatvori se kartica.</p>
+        <a href="#" id="povratak-upute-menu">Povratak</a>
+      </div>
+    </div>
+
+    <div class="game-container">
+      <div class="game-info-container">
+        <div class="game-info" id="player_1_board">
+          Player1 <span id="player_1-poen">0</span>
+        </div>
+        <div class="game-info" id="player_2_board">
+          Player2 <span id="player_2-poen">0</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-back">
+            <span class="poen">50</span>
+          </div>
+          <div class="card-front"></div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-back">
+            <span class="poen">50</span>
+          </div>
+          <div class="card-front"></div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-back">
+            <span class="poen">50</span>
+          </div>
+          <div class="card-front"></div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-back">
+            <span class="poen">50</span>
+          </div>
+          <div class="card-front"></div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-back">
+            <span class="poen">50</span>
+          </div>
+          <div class="card-front"></div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-back">
+            <span class="poen">50</span>
+          </div>
+          <div class="card-front"></div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-back">
+            <span class="poen">50</span>
+          </div>
+          <div class="card-front"></div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-back">
+            <span class="poen">50</span>
+          </div>
+          <div class="card-front"></div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-back">
+            <span class="poen">50</span>
+          </div>
+          <div class="card-front"></div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-back">
+            <span class="poen">50</span>
+          </div>
+          <div class="card-front"></div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-back">
+            <span class="poen">50</span>
+          </div>
+          <div class="card-front"></div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-back">
+            <span class="poen">50</span>
+          </div>
+          <div class="card-front"></div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-back">
+            <span class="poen">50</span>
+          </div>
+          <div class="card-front"></div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-back">
+            <span class="poen">50</span>
+          </div>
+          <div class="card-front"></div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-back">
+            <span class="poen">50</span>
+          </div>
+          <div class="card-front"></div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-back">
+            <span class="poen">50</span>
+          </div>
+          <div class="card-front"></div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-back">
+            <span class="poen">50</span>
+          </div>
+          <div class="card-front"></div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-back">
+            <span class="poen">50</span>
+          </div>
+          <div class="card-front"></div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-back">
+            <span class="poen">50</span>
+          </div>
+          <div class="card-front"></div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-back">
+            <span class="poen">50</span>
+          </div>
+          <div class="card-front"></div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-back">
+            <span class="poen">50</span>
+          </div>
+          <div class="card-front"></div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-back">
+            <span class="poen">50</span>
+          </div>
+          <div class="card-front"></div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-back">
+            <span class="poen">50</span>
+          </div>
+          <div class="card-front"></div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-back">
+            <span class="poen">50</span>
+          </div>
+          <div class="card-front"></div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-back">
+            <span class="poen">50</span>
+          </div>
+          <div class="card-front"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
