@@ -9,7 +9,7 @@ html {
 
 body {
   margin: 0;
-  background-image: radial-gradient(#ffff, rgb(25, 95, 224));
+  background-image: radial-gradient(#ffffff, rgb(25, 95, 224));
 }
 .page-title {
   color: rgb(20, 93, 230);
